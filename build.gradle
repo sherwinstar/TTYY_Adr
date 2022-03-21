@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.3"
+//        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.20"
+        'com.sensorsdata.analytics.android:android-gradle-plugin2:3.2.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"
+        }
+        maven {
+            url 'https://mvn.getui.com/nexus/content/repositories/releases'
+        }
+
+
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        mavenCentral()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

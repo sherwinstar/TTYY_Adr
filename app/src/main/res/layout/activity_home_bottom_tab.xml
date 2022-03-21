@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ushaqi.zhuishushenqi.view.HomeViewPager
+        android:id="@+id/home_main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="60dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom">
+
+        <View
+            android:id="@+id/home_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EBEBF0" />
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/home_main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_below="@id/home_divider_line"
+            android:background="@color/white"
+            tl:tl_textSelectColor="#FFE11521"
+            tl:tl_textUnselectColor="#FF595959"
+            tl:tl_textsize="12sp" />
+    </RelativeLayout>
+
+
+
+
+<!--<include layout="@layout/acty_splash"/>-->
+
+
+</FrameLayout>

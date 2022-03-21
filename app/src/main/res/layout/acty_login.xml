@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="70dp"
+       android:src="@drawable/logo"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="162dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单单都有红包拿"
+            android:textColor="#ffffffff"
+            android:layout_marginRight="26dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="6dp"
+            android:layout_gravity="right"
+            android:paddingBottom="6dp"
+            android:textSize="12sp"
+            android:background="@drawable/login_hint_rebate"
+            />
+
+
+        <RelativeLayout
+            android:background="@drawable/weixin_login_bg_21"
+            android:id="@+id/rl_weixin_login"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="52dp">
+
+
+            <TextView
+
+                android:drawableLeft="@drawable/ic_weixin_login_img"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="微信一键登录"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:drawablePadding="3dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/tv_user_agreement"
+            android:textSize="12sp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="48dp"
+            android:textColor="#FF999999"
+            android:text="登录代表您已详细阅读、理解并同意《天天有余APP用户协议》和《用户隐私政策》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginBottom="50dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/check_login"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/login_check_box_bg"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

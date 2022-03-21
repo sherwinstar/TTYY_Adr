@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="361dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/task_center_dialog_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="用户隐私保护提示"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <ScrollView
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:lineSpacingMultiplier="1.1"
+                    android:textSize="13sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+
+                    android:id="@+id/dialog_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_content"
+                    android:textColor="#1E1E1F" />
+
+            </ScrollView>
+
+            <TextView
+                android:layout_marginStart="52dp"
+                android:layout_marginEnd="52dp"
+                android:id="@+id/tv_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="同意并进入"
+                android:background="@drawable/common_btn_red_bg"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/tv_dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="不同意"
+                android:textColor="#9B9BA3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

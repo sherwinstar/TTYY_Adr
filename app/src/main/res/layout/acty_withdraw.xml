@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:id="@+id/ll_unbind_zfb_hint"
+    android:background="#FFFFF9E0"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_unbind_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#FFFF8B00"
+        android:id="@+id/tv_unbind_zfb_hint"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:paddingBottom="8dp"
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:text="你还没绑定支付宝信息，绑定并提交后提现金额将转入该支付宝账户"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:src="@drawable/alipay"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+<LinearLayout
+    android:layout_marginLeft="43dp"
+    android:layout_marginRight="43dp"
+    android:layout_marginBottom="13dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="账号"
+        android:ems="4"
+        android:textSize="16sp"
+        android:textColor="#FF000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<EditText
+    android:textSize="16sp"
+    android:textColorHint="#FFBEBEBE"
+    android:hint="输入支付宝账号"
+    android:id="@+id/et_zfb_account"
+    android:maxLines="1"
+    android:layout_weight="1"
+    android:singleLine="true"
+    android:background="@null"
+    android:maxLength="30"
+    android:layout_width="0dp"
+    android:textColor="#FF020202"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+<View
+    android:layout_marginLeft="43dp"
+    android:layout_marginRight="43dp"
+    android:background="#FFEBEBF0"
+    android:layout_width="match_parent"
+    android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="13dp"
+         android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="姓名"
+            android:ems="4"
+            android:textSize="16sp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:textSize="16sp"
+            android:textColorHint="#FFBEBEBE"
+            android:textColor="#FF020202"
+            android:hint="输入真实姓名"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#FFEBEBF0"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="身份证号"
+            android:ems="4"
+            android:textSize="16sp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_id_num"
+            android:textSize="16sp"
+            android:textColorHint="#FFBEBEBE"
+            android:hint="输入身份证号"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLength="21"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:inputType="number"
+            android:digits="@string/filter_vcode"
+            android:layout_width="0dp"
+            android:textColor="#FF020202"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#FFEBEBF0"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="手机号"
+            android:ems="4"
+            android:textSize="16sp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:textSize="16sp"
+            android:textColorHint="#FFBEBEBE"
+            android:hint="输入手机号"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="13"
+            android:layout_width="0dp"
+            android:textColor="#FF020202"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#FFEBEBF0"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为了您能成功提现，请确保此处填写的「实名身份信息」真实无误。
+如果您将要使用微信提现功能，需要确认此处的「实名身份信息」
+与您微信账号中「实名身份信息」一致，否则会提现失败。"
+        android:textColor="#ffb7b7bd"
+        android:textSize="10sp"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:text="确认并提交"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="18sp"
+        android:background="@drawable/bg_btn_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"/>
+
+
+
+</LinearLayout>

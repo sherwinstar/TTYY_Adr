@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="actionbar_height">56dp</dimen>
+    <dimen name="actionbar_back_width">69dp</dimen>
+    <!--圆角-->
+    <dimen name="radius_svprogresshuddefault" tools:ignore="MissingDefaultResource">25px</dimen>
+
+    <!--窗口最小宽度-->
+    <dimen name="size_minwidth_svprogresshuddefault" tools:ignore="MissingDefaultResource">120dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_svprogresshuddefault">15dp</dimen>
+
+    <!--图片宽高-->
+    <dimen name="size_image_bigloading">80dp</dimen>
+
+    <!--图片宽高-->
+    <dimen name="size_image_smallloading">60dp</dimen>
+    <dimen name="margintop_svprogresshuddefault_msg">10dp</dimen>
+    <dimen name="textSize_svprogresshuddefault_msg">15sp</dimen>
+</resources>

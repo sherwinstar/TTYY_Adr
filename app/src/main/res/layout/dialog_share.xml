@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/bg_share_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="227dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享至"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff262626"
+            android:textSize="18sp"
+            />
+
+<LinearLayout
+    android:layout_marginTop="22dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#ff262626"
+        android:textSize="15sp"
+        android:id="@+id/tv_wx_friend"
+        android:text="微信朋友"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/ic_weixin"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#ff262626"
+        android:textSize="15sp"
+        android:text="朋友圈"
+        android:id="@+id/tv_wx_circle"
+        android:drawablePadding="12dp"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/ic_weixin_circle"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#ff262626"
+        android:textSize="15sp"
+        android:text="保存图片"
+        android:id="@+id/tv_save_pic"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/ic_pic_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_share_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+

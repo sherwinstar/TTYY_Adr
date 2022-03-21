@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion COMPILE_SDK as int
+    buildToolsVersion BUILD_TOOLS
+
+    defaultConfig {
+        minSdkVersion MIN_SDK
+        targetSdkVersion TARGET_SDK
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+        //新浪微博
+//        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api "com.android.support:appcompat-v7:$rootProject.SUPPORT_VERSION"
+
+    //QQ登录分享
+//    implementation files('libs/open_sdk_r6019_lite.jar')
+//    implementation files('libs/mta-android-sdk-3.4.7.jar')
+//    implementation files('libs/mid-sdk-4.06.jar')
+
+    //微信登录分享
+    //api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
+
+    //最新微信登录分享依赖（api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'）
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.5.2'
+
+    //新浪微博
+//    api 'com.sina.weibo.sdk:core:4.4.1:openDefaultRelease@aar'
+}

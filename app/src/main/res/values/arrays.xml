@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_tabs">
+        <item>首页</item>
+        <item>优选</item>
+        <item>爆品</item>
+        <item>游戏</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="home_no_game_tabs">
+        <item>首页</item>
+        <item>优选</item>
+        <item>爆品</item>
+        <item>我的</item>
+    </string-array>
+</resources>

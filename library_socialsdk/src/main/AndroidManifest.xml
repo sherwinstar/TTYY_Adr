@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ushaqi.zhuishushenqi.plugin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <!-- QQ登录-->
+<!--        <activity-->
+<!--            android:name="com.tencent.tauth.AuthActivity"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:noHistory="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                &lt;!&ndash; 1107924107是应用申请的APPID, 需要以tencent为前缀&ndash;&gt;-->
+<!--                <data android:scheme="tencent1107924107" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name="com.tencent.connect.common.AssistActivity"-->
+<!--            android:configChanges="orientation|keyboardHidden"-->
+<!--            android:screenOrientation="behind"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!-- QQ登录-->
+
+        <!-- 微博分享 -->
+
+<!--        <activity android:name="com.ushaqi.zhuishushenqi.plugin.social.weibo.WeiBoAuthAgentActivity"-->
+<!--            android:exported="false"-->
+<!--            android:excludeFromRecents="true"-->
+<!--            android:configChanges="orientation|keyboardHidden"-->
+<!--            android:screenOrientation="behind"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--            />-->
+
+    </application>
+
+</manifest>

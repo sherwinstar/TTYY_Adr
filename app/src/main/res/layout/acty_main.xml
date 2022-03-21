@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_login"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:text="设置"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_home"
+        android:text="首页"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:id="@+id/btn_taobao"
+        android:text="打开淘宝"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/btn_jd"
+        android:text="打开京东"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/btn_pdd"
+        android:text="打开拼多多"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

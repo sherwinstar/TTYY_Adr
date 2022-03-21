@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/bg_dialog_goods"
+            android:layout_width="309dp"
+            android:layout_height="248dp">
+            <TextView
+                android:layout_marginTop="33dp"
+                android:id="@+id/tv_update_title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#262626"
+                android:text="比价订单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_update_des"
+                android:layout_below="@+id/tv_update_title"
+                android:text="本次自购涉及比价行为自购收益为0，建议在天天有余APP收藏，2小时后通过天天有余购买"
+                android:textColor="#999999"
+                android:textSize="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_collect_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_update_des"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_goto_buy"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <ImageView
+
+                android:id="@+id/iv_collect_cancel"
+                android:padding="5dp"
+                android:src="@drawable/ic_update_cancel"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+

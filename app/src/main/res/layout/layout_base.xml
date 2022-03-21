@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ushaqi.zhuishushenqi.widget.ZSToolBar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" />
+
+    <FrameLayout
+        android:id="@+id/base_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

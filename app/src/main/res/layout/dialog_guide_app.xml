@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_guide_background"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_guide_background1"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_welcome_video"
+        android:layout_height="506dp"
+        android:layout_width="285dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/iv_welcome_video"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_guide_video_mute"
+            android:layout_width="44dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_guide_mute">
+
+            <ImageView
+                android:id="@+id/image_guide_video_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_guide_video_audio"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/ll_skip_guide"
+        android:src="@drawable/ic_welcome_skip"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="98dp"
+        android:layout_height="32dp"/>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_welcome_step1"
+        android:foreground="@drawable/ic_welcome_step1"
+        android:layout_width="337dp"
+        android:layout_height="235dp"/>
+
+    <Button
+        android:id="@+id/btn_guide_next"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_welcome_step1"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:text="播放演示"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_guide"
+        />
+
+
+</RelativeLayout>

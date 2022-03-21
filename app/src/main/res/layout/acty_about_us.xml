@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tv_version_name"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FF999999"
+                tools:text="version 1.0.0"
+                android:textSize="13sp" />
+
+
+
+
+                <TextView
+                    android:layout_marginTop="75dp"
+                    android:id="@+id/tv_user_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_centerVertical="true"
+
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="用户协议"
+                    android:drawableRight="@drawable/ios_arrow"
+                    android:textColor="#FF262626"
+                    android:textSize="14sp" />
+
+
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="#F4F4F4" />-->
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_user_secret_protect"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ios_arrow"
+                    android:text="隐私保护政策"
+                    android:textColor="#FF262626"
+                    android:textSize="14sp" />
+
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="#F4F4F4" />-->
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_user_appeal_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="第三方SDK合作伙伴共享信息说明"
+                    android:drawableRight="@drawable/ios_arrow"
+                    android:textColor="#FF262626"
+                    android:textSize="14sp"/>
+
+
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="#F4F4F4" />-->
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="51dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="隐私设置"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:id="@+id/tv_user_privacy_setting"-->
+<!--                    android:drawableRight="@drawable/ios_arrow"-->
+<!--                    android:textColor="#FF262626"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="#F4F4F4" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_info_report"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="51dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="个人信息安全投诉举报"-->
+<!--                    android:drawableRight="@drawable/ios_arrow"-->
+<!--                    android:textColor="#FF262626"-->
+<!--                    android:textSize="14sp" />-->
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="copyright© 江西聚文有限公司"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>

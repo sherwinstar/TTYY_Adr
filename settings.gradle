@@ -1,0 +1,5 @@
+include ':JDUnionSDK'
+//include ':library_annotation'
+include ':library_socialsdk'
+include ':app'
+rootProject.name = "tiantianyouyu"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="top_status_color">#FFF8F8F8</color>
+    <color name="first_level_title_color">#ff262626</color>
+    <color name="second_level_title_color">#ff777777</color>
+    <color name="text_red_EE">#EE4745</color>
+    <color name="bg_white_FF">#FFFFFF</color>
+    <color name="text_black_1E">#1E1E1F</color>
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_svprogressdefaultview">@android:color/white</color>
+    <!--标题颜色-->
+    <color name="textColor_svprogresshuddefault_msg">#000000</color>
+    <color name="roundColor_svprogresshuddefault">#e5e5e5</color>
+    <color name="roundProgressColor_svprogresshuddefault">@android:color/black</color>
+    <!--覆盖颜色-->
+    <color name="setting_color_unauth">#595959</color>
+
+    <color name="setting_color_authed">#999999</color>
+
+
+
+</resources>

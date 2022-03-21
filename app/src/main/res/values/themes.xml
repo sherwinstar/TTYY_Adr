@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.Tiantianyouyu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+
+    </style>
+
+    <style name="WebViewTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="actionBarStyle">@style/Base_ActionBar_Style</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+
+
+    <style name="TranslucentTheme" parent="Theme.Tiantianyouyu">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ReaderBuyTheme" parent="Theme.Tiantianyouyu">
+
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="Base_ActionBar_Style" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/bg_white_FF</item>
+        <item name="android:background">@color/bg_white_FF</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart" tools:ignore="NewApi">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="android:contentInsetEnd" tools:ignore="NewApi">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+    <style name="Splash_NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+<!--        <item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+     <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+
+    </style>
+
+    <style name="Bottom_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowEnterAnimation">@anim/dock_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dock_bottom_exit</item>
+    </style>
+
+    <style name="dialogNoBg" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="16dp"
+            android:src="@drawable/ab_back3" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+          android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/first_level_title_color"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/right_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/right_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/right_icon_1" />
+
+        <TextView
+            android:id="@+id/activity_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:text="活动规则"
+            android:textSize="17sp"
+
+            android:visibility="gone"/>
+
+
+        <Button
+            android:text="关闭"
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:background="@null"
+
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

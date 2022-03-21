@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="308dp"
+        android:layout_height="336dp">
+        <ImageView
+            android:id="@+id/iv_dialog_head"
+            android:src="@drawable/ic_update_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:background="@drawable/bg_dialog_update"
+            android:layout_below="@+id/iv_dialog_head"
+            android:layout_width="match_parent"
+            android:layout_height="226dp">
+            <TextView
+                android:id="@+id/tv_update_title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#262626"
+                android:text="发现新版本"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_update_des"
+                android:layout_below="@+id/tv_update_title"
+                android:text="U盾书VCD是VB虎刺都会随程度谁吃的啥十几次欧弟就死哦几次瓯都市几次欧弟是交叉降低搜从基地搜集从兄弟是"
+                android:textColor="#999999"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_update_confirm"
+                android:layout_below="@+id/tv_update_des"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="立即升级"
+                android:background="@drawable/bg_goto_buy"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+
+            android:id="@+id/iv_update_cancel"
+            android:padding="5dp"
+            android:src="@drawable/ic_update_cancel"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

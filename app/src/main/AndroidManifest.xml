@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ushaqi.zhuishushenqi">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-sdk tools:overrideLibrary="com.bun.miitmdid"/>
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH"
+        tools:node="merge"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"
+        tools:node="merge"/>
+    <uses-permission android:name="android.permission.GET_TASKS"
+        tools:node="merge"/>
+
+    <uses-permission android:name="getui.permission.GetuiService.com.jxjuwen.ttyy"/>
+    <permission
+        android:name="getui.permission.GetuiService.com.jxjuwen.ttyy"
+        android:protectionLevel="normal"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:allowBackup,android:theme"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tiantianyouyu"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="7MgRJ6ERXZAVx1atCZpPH3" />
+
+
+        <activity android:name=".module.baseweb.view.ZssqWebActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebViewTheme"
+           >
+
+        </activity>
+
+        <activity android:name="com.jxjuwen.ttyy.SplashActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/Splash_NoTitleBar"
+         >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name="com.jxjuwen.ttyy.WelcomeActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:name="com.jxjuwen.ttyy.LoginActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.jxjuwen.ttyy.AboutUsActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.jxjuwen.ttyy.SettingActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.jxjuwen.ttyy.WithDrawActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.jxjuwen.ttyy.InviteCodeActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.jxjuwen.ttyy.HomeActy"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout"
+            android:theme="@style/WebViewTheme"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.jxjuwen.ttyy.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <receiver android:name=".DownloadCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.jxjuwen.ttyy.getui.YouyubsPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"/>
+
+    </application>
+
+</manifest>

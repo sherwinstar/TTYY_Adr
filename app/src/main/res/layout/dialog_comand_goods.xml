@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="308dp"
+        android:layout_height="270dp"
+        android:background="@drawable/bg_dialog_goods"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:background="@drawable/bg_top_dialog_goods"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已为您找到"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_goods_container"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.ushaqi.zhuishushenqi.widget.NewCoverView
+                    android:id="@+id/ic_goods_pic"
+                    android:layout_centerVertical="true"
+                    android:layout_width="84dp"
+                    app:new_rad="6dp"
+                    android:layout_height="84dp">
+
+                </com.ushaqi.zhuishushenqi.widget.NewCoverView>
+                <ImageView
+                    android:layout_alignTop="@id/ic_goods_pic"
+                    android:layout_toRightOf="@id/ic_goods_pic"
+                    android:id="@+id/iv_channel_flag"
+                    android:layout_marginLeft="9dp"
+                    tools:src="@drawable/ic_taobao"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="-2dp"
+                    android:layout_alignTop="@id/iv_channel_flag"
+                    android:layout_toRightOf="@id/iv_channel_flag"
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_height="wrap_content"
+                    tools:text="螺霸王螺狮粉280g…"
+                    android:textColor="#ff262626"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/ic_goods_pic"
+                    android:layout_marginLeft="9dp"
+                    android:layout_below="@id/tv_goods_name"
+                    android:id="@+id/tv_coupons"
+                    android:textColor="#ff6b4708"
+                    android:textSize="10sp"
+                    android:layout_marginTop="9dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="2dp"
+                    tools:text="券  ¥555.50"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:background="@drawable/ic_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="9dp"
+                    android:background="@drawable/bg_predict_gain"
+                    android:layout_toRightOf="@id/tv_coupons"
+                    android:layout_below="@id/tv_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="预计赚¥2.50"
+                    android:singleLine="true"
+                    android:id="@+id/tv_fanli_amount"
+                    android:textColor="#ffffffff"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:id="@+id/tv_discount_price"
+                    android:layout_toRightOf="@id/ic_goods_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="到手约¥ 12009.10"
+                    android:singleLine="true"
+                    android:layout_alignBottom="@id/ic_goods_pic"
+                    android:textColor="#ffe11521"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/tv_discount_price"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignBaseline="@id/tv_discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="¥13450.0"
+                    android:singleLine="true"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/tv_original_price"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                tools:text="https://mobile.yangkeduo.com/goods.1html?goods_id=230492710102.good…good…good…good…good…"
+                android:maxLines="2"
+                android:textColor="#ff262626"
+                android:textSize="14sp"
+                android:id="@+id/tv_not_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_buy_action"
+            android:visibility="visible"
+           android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:text="全网最低价"
+                android:textColor="#ffe11521"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:id="@+id/tv_lowest_price"
+                android:background="@drawable/bg_lowest_price"
+              />
+            <Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_goto_buy"
+
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:text="任性购买"
+                android:textColor="#FFFFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/bg_goto_buy" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_search"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_goto_buy"
+            android:layout_width="230dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="  搜淘宝/天猫"
+             android:layout_centerInParent="true"
+                android:textColor="#FFFFFFFF"
+                android:gravity="center"
+                android:background="@null"
+                tools:drawableLeft="@drawable/ic_taobao_white"
+                android:textSize="14sp"
+               />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+

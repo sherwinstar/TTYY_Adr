@@ -1,0 +1,4 @@
+com/jd/jdsdk/BuildConfig.java
+ com.jd.jdsdk.BuildConfig
+sdklogindemo/example/com/apklib/LibTest.java
+ sdklogindemo.example.com.apklib.LibTest

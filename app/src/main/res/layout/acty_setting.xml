@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_withdraw_setting"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="提现设置"
+            android:textColor="#FF262626"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_alipay_auth"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="未绑定支付宝"
+            android:textColor="#FF262626"
+            android:textSize="14sp"
+         />
+
+
+        <ImageView
+            android:id="@+id/iv_ali_arrow"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/ios_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_withdraw_setting"
+        android:id="@+id/rl_taobao_auth"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="淘宝授权"
+            android:textColor="#FF262626"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_taobao_auth"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="未授权，点击授权"
+            android:textColor="#FF262626"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/iv_taobao_arrow"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ios_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pdd_auth"
+        android:layout_below="@+id/rl_taobao_auth"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="拼多多授权"
+            android:textColor="#FF262626"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pdd_auth"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:text="未授权，点击授权"
+            android:textColor="#FF262626"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/iv_pdd_arrow"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ios_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/rl_pdd_auth"
+        android:id="@+id/tv_account_safe"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableRight="@drawable/ios_arrow"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="联系客服"
+        android:textColor="#FF262626"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_below="@+id/tv_account_safe"
+        android:id="@+id/tv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableRight="@drawable/ios_arrow"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="关于我们"
+        android:textColor="#FF262626"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_below="@id/tv_about_us"
+        android:id="@+id/tv_un_register"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableRight="@drawable/ios_arrow"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="注销说明"
+        android:textColor="#FF262626"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableRight="@drawable/ios_arrow"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="个人信息"
+        android:textColor="#FF262626"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:layout_marginBottom="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF999999"
+        android:textSize="14sp"
+        tools:text="version 1.0.0" />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/tv_version_name"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_logout"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_logout"
+        android:text="退出账号"
+        android:textColor="#FF999999"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+
